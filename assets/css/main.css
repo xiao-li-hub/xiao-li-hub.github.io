@@ -187,6 +187,7 @@ blockquote {
 
 .profile.float-right {
   margin-left: 1rem;
+  margin-top: -8rem;
 }
 
 .profile.float-left {
@@ -768,7 +769,7 @@ d-article d-contents {
   justify-self: end;
   margin-top: 0em;
   padding-left: 2em;
-  padding-right: 3em;
+  padding-last_name: 3em;
   border-right: 1px solid var(--global-divider-color);
   width: max(70%, 300px);
   margin-right: 0px;
