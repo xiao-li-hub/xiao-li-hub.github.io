@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://xiao-li-hub.github.io/sitemap.xml
