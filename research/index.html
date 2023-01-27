@@ -128,7 +128,13 @@
 
 <!-- Project: AC -->
 <h2 id="actor-critic-in-reinforcement-learning-"><span style="font-family:Heletica;font-weight:100;font-size:25px">Actor Critic in Reinforcement Learning </span></h2>
-<p>Actor Critic (AC) is a popular algorithmic framework for policy-based reinforcement learning algorithm. It uses parametrization for both the policy and value function, and hence transfers the reward maximization task to an optimization task over the two parametrizations. In this algorithm, the actor model (i.e. policy) maximizes the objective function using (stochastic) gradient ascent, where the gradient is calculated using the value estimated by a critic model.</p>
+<p>Actor Critic (AC) is a popular algorithmic framework for policy-based reinforcement learning. It uses parametrization for both policy (with parameter \(\theta\)) and value function (with parameter \(w\)), and hence transfers the reward maximization task into an optimization task over \(\theta\) and \(w\). In this algorithm, the actor model (i.e. policy) maximizes the objective function using (stochastic) gradient ascent, where the stochastic gradient is calculated using the value estimated by a critic model.</p>
+
+<p>In practice, AC ususally implements a <em>single-timescale</em> update scheme, namely, it adopts an alternating optimization framework over \(\theta\) and \(w\), and update each variable at every iteration for constant number of steps using the same order of step sizes for \(\theta\) and \(w\). However, most of the exisitng analyses focus on  either a <em>double-loop</em> or a <em>two-timescale</em> framework. Therefore, the aim of this project is to understand the properties of single-timescale AC and designing its variants with applications to practical policy optimization problems.</p>
+
+<p>The following is a starting point of this project:</p>
+
+<p><span style="font-family:Arial;font-weight:50;font-size:15.5px"> Finite-Time Analysis of Decentralized Single-Timescale Actor-Critic. </span>   <br> Qijun Luo, Xiao Li. <br> To appear in Transactions on Machine Learning Research, 2023.   [<a href="https://arxiv.org/abs/2206.05733" target="_blank" rel="external nofollow noopener">ArXiv</a>]</p>
 
 <!-- Project: almost sure -->
 <h2 id="-almost-sure-convergence-properties-of-stochastic-optimization-methods-"><span style="font-family:Heletica;font-weight:100;font-size:25px"> Almost Sure Convergence Properties of Stochastic Optimization Methods </span></h2>
