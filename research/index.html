@@ -53,7 +53,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="/"><span style="font-family:Heletica;font-weight:50">Xiao </span><span style="font-family:Heletica;font-weight:50">Li</span></a>
+          <a class="navbar-brand title font-weight-lighter" href="/"><span style="font-family:Helvetica;font-weight:50">Xiao </span><span style="font-family:Helvetica;font-weight:50">Li</span></a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -111,7 +111,7 @@
             <p>My research interests lie in several fundamental aspects of optimization and machine learning. They are often motivated by practical needs and/or observations. Here are currently ongoing research projects of my group.</p>
 
 <!-- Project: RR -->
-<h2 id="design-and-analysis-of-stochastic-optimization-methods"><span style="font-family:Heletica;font-weight:100;font-size:25px">Design and Analysis of Stochastic Optimization Methods</span></h2>
+<h2 id="design-and-analysis-of-stochastic-optimization-methods"><span style="font-family:Helvetica;font-weight:100;font-size:25px">Design and Analysis of Stochastic Optimization Methods</span></h2>
 <p>Stochastic gradient method (SGD) plays an important role in modern machine learning due to the large-scale feature of the arising problems. Most of the (supervised) learning problem amounts to solving an emperical risk minimization problem, i.e., minimizing a finite-sum objective \(f(w) = \frac{1}{n}\sum_{i = 1}^n f_i(w)\). There are several variants of SGD for solving this type of problem.  In the theory side, the existing analyses mainly apply to the following i.i.d. sampling version of SGD:</p>
 
 \[w_{t+1} = w_t - \alpha_t \nabla f_{i_t} (w_t).\]
@@ -129,7 +129,7 @@
 <p><span style="font-family:Arial;font-weight:50;font-size:15.5px">  A Unified Convergence Theorem for Stochastic Optimization Methods. </span>   <br> Xiao Li, Andre Milzarek. <br> Advances in Neural Information Processing Systems (NeurIPS 2022).    [<a href="https://openreview.net/forum?id=muvlhVKvd4" target="_blank" rel="external nofollow noopener">NeurIPS Link</a>]   [<a href="https://drive.google.com/file/d/1H2pHzWdvvLir-0v3oOq_1SM0Tlw1hRjY/view?usp=share_link" target="_blank" rel="external nofollow noopener">Slides</a>]</p>
 
 <!-- Project: AC -->
-<!-- ## <span style="font-family:Heletica;font-weight:100;font-size:25px">Actor Critic in Reinforcement Learning </span>
+<!-- ## <span style="font-family:Helvetica;font-weight:100;font-size:25px">Actor Critic in Reinforcement Learning </span>
 Actor Critic (AC) is a popular algorithmic framework for policy-based reinforcement learning. It uses parametrization for both policy (with parameter $$\theta$$) and value function (with parameter $$w$$), and hence transfers the reward maximization task into an optimization task over $$\theta$$ and $$w$$. In this algorithm, the actor model (i.e. policy) maximizes the objective function using (stochastic) gradient ascent, where the stochastic gradient is calculated using the value estimated by a critic model. 
 
 In practice, AC ususally implements a *single-timescale* update scheme, namely, it adopts an alternating optimization framework over $$\theta$$ and $$w$$, and update each variable at every iteration for constant number of steps using the same order of step sizes for $$\theta$$ and $$w$$. However, most of the exisitng analyses focus on  either a *double-loop* or a *two-timescale* framework. Therefore, the aim of this project is to understand the properties of single-timescale AC and designing its variants with applications to practical policy optimization problems. 
@@ -139,7 +139,7 @@ The following is a starting point of this project:
 <span style="font-family:Arial;font-weight:50;font-size:15.5px"> Finite-Time Analysis of Decentralized Single-Timescale Actor-Critic. </span>   <br/> Qijun Luo, Xiao Li. <br/> To appear in Transactions on Machine Learning Research, 2023. &nbsp; [<a href="https://arxiv.org/abs/2206.05733" target="_blank">arXiv</a>] -->
 
 <!-- Project: almost sure -->
-<!-- ## <span style="font-family:Heletica;font-weight:100;font-size:25px"> Almost Sure Convergence Properties of Stochastic Optimization Methods </span>
+<!-- ## <span style="font-family:Helvetica;font-weight:100;font-size:25px"> Almost Sure Convergence Properties of Stochastic Optimization Methods </span>
 In the past years, we often care about nonasymptotic properties for stochastic optimization methods. Suppose we are using SGD to optimize a smooth nonconvex function $$f$$, its finite-time complexity guarantee often has the form
 
 $$ \min_{k=0,\ldots, T} \ \mathbb{E}[\|\nabla f(x^k)\|^2] \leq \mathcal{O} \left(\frac{1}{\sqrt{T+1}}\right) \quad \text{or} \quad \mathbb{E}[\|\nabla f(x^{\bar k})\|^2] \leq \mathcal{O} \left(\frac{1}{\sqrt{T+1}}\right) $$
@@ -155,7 +155,7 @@ The following is a starting point of this project:
 <span style="font-family:Arial;font-weight:50;font-size:15.5px"> Convergence of Random Reshuffling Under The Kurdyka-Lojasiewicz Inequality. </span>   <br/> Xiao Li, Andre Milzarek, Junwen Qiu. <br/> To appear in SIAM Journal on Optimization, 2023.  &nbsp; [<a href="https://arxiv.org/abs/2110.04926" target="_blank">arXiv</a>] -->
 
 <!-- Project: Nonconvex optimization and algorithm -->
-<h2 id="-nonconvex-optimization-and-algorithm-design-"><span style="font-family:Heletica;font-weight:100;font-size:25px"> Nonconvex Optimization and Algorithm Design </span></h2>
+<h2 id="-nonconvex-optimization-and-algorithm-design-"><span style="font-family:Helvetica;font-weight:100;font-size:25px"> Nonconvex Optimization and Algorithm Design </span></h2>
 <p>In general, nonconvex optimization is not feasible for attaining global optimality. There are a set of nonconvex problems in machine learning and signal processing that exhibit benign properties. For instance, a fundamental problem is to recover \(w^*\) from \(y = Xw^* + e\), given \(y\) and \(X\). We omit the dimension here for simplicity. Note that the lower case \(y\), \(w^*\), and \(e\) are not restricted to be vectors, they can also be matrices.  Such a problem has various names in different communities by imposing different structures on \(w^*\). A family of good examples are variants of (robust) PCA when \(w^*\) is assume to be a low-rank matrix. In this project, we consider both the analysis of the nonconvex optimization problem landscape and the design of efficient algorithms.</p>
 
 <!-- 
