@@ -105,9 +105,23 @@
           </header> -->
 
           <article>
-            <p>My research interests lie in several fundamental aspects of optimization and machine learning. They are often motivated by practical needs and/or observations. Here are currently ongoing research projects of my group.</p>
+            <p>My research interests lie in several aspects of mathemtical optimization and machine learning. They are often motivated by practical needs and/or observations. Here are currently ongoing and some past research projects of my group.</p>
 
-<!-- Project: RR -->
+<p><br>
+<!-- Project: LLMs --></p>
+<h2 id="llms-and-optimization-for-llms"><span style="font-family:Helvetica;font-weight:100;font-size:25px">LLMs and Optimization for LLMs</span></h2>
+<p>Large language models (LLMs) are the core of the ChatGPT moment. It is perhaps one of the most innovative achivements in artificial intellegence. LLMs are mostly based on Transformer architecture. Its attention module extracts the complicated relationships between tokens of a sentence. It then autoregressively predicts the next token using logistic regression and its volcabulary (classifier). LLMs are trained on Trillions of tokens and have billions of parameters. Traning LLMs is essentially an extremely large-scale optimization problem.</p>
+
+<p>My research group is very interested in LLM research, including supervised finetuning (SFT), preference optimization, memory efficient optimization methods, and reasoning models.</p>
+
+<p>Here are some related papers of this project:</p>
+
+<p><span style="font-family:Arial;font-weight:50;font-size:15.5px"> BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models. </span>   <br> Qijun Luo, Hengxu Yu, Xiao Li. <br> Advances in Neural Information Processing Systems (NeurIPS 2024).   [<a href="https://openreview.net/pdf?id=0uXtFk5KNJ" rel="external nofollow noopener" target="_blank">NeurIPS Link</a>]   [<a href="https://github.com/Ledzy/BAdam" rel="external nofollow noopener" target="_blank">Github Repo</a>]   [<a href="https://drive.google.com/file/d/13LraIpwIwFF4_0CWo7L1uMaRyMcg4Veg/view?usp=sharing" rel="external nofollow noopener" target="_blank">Slides</a>]</p>
+
+<p><span style="font-family:Arial;font-weight:50;font-size:15.5px"> DPO-Shift: Shifting the Distribution of Direct Preference Optimization. </span>   <br> Xiliang Yang, Feng Jiang, Qianen Zhang, Lei Zhao, Xiao Li. <br> [<a href="https://github.com/Meaquadddd/DPO-Shift" rel="external nofollow noopener" target="_blank">Github Repo</a>]   [<a href="https://arxiv.org/abs/2502.07599" rel="external nofollow noopener" target="_blank">arXiv Preprint</a>]</p>
+
+<p><br>
+<!-- Project: RR --></p>
 <h2 id="design-and-analysis-of-stochastic-optimization-methods"><span style="font-family:Helvetica;font-weight:100;font-size:25px">Design and Analysis of Stochastic Optimization Methods</span></h2>
 <p>Stochastic gradient method (SGD) plays an important role in modern machine learning due to the large-scale feature of the arising problems. Most of the (supervised) learning problem amounts to solving an emperical risk minimization problem, i.e., minimizing a finite-sum objective \(f(w) = \frac{1}{n}\sum_{i = 1}^n f_i(w)\). There are several variants of SGD for solving this type of problem.  In the theory side, the existing analyses mainly apply to the following i.i.d. sampling version of SGD:</p>
 
@@ -118,6 +132,8 @@
 <p>Understanding the properties of these methods are of practical importance, which is a major direction of this project. Antoher important direction is to design new stochastic optimization methods for better performance.</p>
 
 <p>Here are some related papers of this project:</p>
+
+<p><span style="font-family:Arial;font-weight:50;font-size:15.5px"> High Probability Guarantees for Random Reshuffling. </span>   <br> Hengxu Yu, Xiao Li. <br> [<a href="https://arxiv.org/abs/2311.11841" rel="external nofollow noopener" target="_blank">arXiv Preprint</a>]</p>
 
 <p><span style="font-family:Arial;font-weight:50;font-size:15.5px"> Convergence of Random Reshuffling Under The Kurdyka-Lojasiewicz Inequality. </span>   <br> Xiao Li, Andre Milzarek, Junwen Qiu. <br> SIAM Journal on Optimization, 33(2), 1092-1120, 2023.    [<a href="https://epubs.siam.org/doi/10.1137/21M1468048" rel="external nofollow noopener" target="_blank">SIAM Link</a>]   [<a href="https://arxiv.org/abs/2110.04926" target="_blank" rel="external nofollow noopener">arXiv</a>]   [<a href="https://drive.google.com/file/d/10vtq6wqTAy2nBPrhArqnZb_V1YGpoGdR/view?usp=sharing" target="_blank" rel="external nofollow noopener">Slides</a>]</p>
 
@@ -151,8 +167,9 @@ The following is a starting point of this project:
 
 <span style="font-family:Arial;font-weight:50;font-size:15.5px"> Convergence of Random Reshuffling Under The Kurdyka-Lojasiewicz Inequality. </span>   <br/> Xiao Li, Andre Milzarek, Junwen Qiu. <br/> To appear in SIAM Journal on Optimization, 2023.  &nbsp; [<a href="https://arxiv.org/abs/2110.04926" target="_blank">arXiv</a>] -->
 
-<!-- Project: Nonconvex optimization and algorithm -->
-<h2 id="-nonconvex-optimization-and-algorithm-design-"><span style="font-family:Helvetica;font-weight:100;font-size:25px"> Nonconvex Optimization and Algorithm Design </span></h2>
+<p><br>
+<!-- Project: Nonconvex optimization and algorithm --></p>
+<h2 id="-nonsmooth-andor-nonconvex-optimization-and-algorithm-design-"><span style="font-family:Helvetica;font-weight:100;font-size:25px"> Nonsmooth and/or Nonconvex Optimization, and Algorithm Design </span></h2>
 <p>In general, nonconvex optimization is not feasible for attaining global optimality. There are a set of nonconvex problems in machine learning and signal processing that exhibit benign properties. For instance, a fundamental problem is to recover \(w^*\) from \(y = Xw^* + e\), given \(y\) and \(X\). We omit the dimension here for simplicity. Note that the lower case \(y\), \(w^*\), and \(e\) are not restricted to be vectors, they can also be matrices.  Such a problem has various names in different communities by imposing different structures on \(w^*\). A family of good examples are variants of (robust) PCA when \(w^*\) is assume to be a low-rank matrix. In this project, we consider both the analysis of the nonconvex optimization problem landscape and the design of efficient algorithms.</p>
 
 <!-- 
